@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  .swiper-horizontal>.swiper-pagination-bullets {
+      bottom: 0 !important;
+      /* Ajusta os bullets para ficarem mais embaixo */
+  }
+    #home {
+      min-height: 100vh;
+    }
