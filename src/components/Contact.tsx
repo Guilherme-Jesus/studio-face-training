@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   FaFacebook,
   FaInstagram,
-  FaWhatsapp,
   FaMapMarkerAlt,
   FaPhoneAlt,
-  FaCalendarAlt,
+  FaWhatsapp
 } from "react-icons/fa";
 
 const Contact: React.FC = () => {
@@ -63,7 +62,7 @@ const Contact: React.FC = () => {
             <FaFacebook />
           </a>
           <a
-            href="https://wa.me/913533497"
+            href="https://wa.me/351913533497"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -78,7 +77,7 @@ const Contact: React.FC = () => {
             <div className="space-y-1 text-left">
               <h3 className="font-semibold text-lg">Morada da Clínica:</h3>
               <span>
-                R. Rodrigo Albuquerque e Melo 27, 2795-232 Linda-a-Velha,
+                R. Rodrigo Albuquerque e Melo 27 B, 2795-232 Linda-a-Velha,
                 Portugal
               </span>
             </div>
@@ -88,15 +87,7 @@ const Contact: React.FC = () => {
             <FaPhoneAlt className="text-xl mt-1" />
             <div className="space-y-1 text-left">
               <h3 className="font-semibold text-lg">Telefone:</h3>
-              <span>913 533 497</span>
-            </div>
-          </div>
-
-          <div className="flex items-start space-x-2">
-            <FaCalendarAlt className="text-xl mt-1" />
-            <div className="space-y-1 text-left">
-              <h3 className="font-semibold text-lg">Dia de Abertura:</h3>
-              <p>Previsto para dia 16-22 setembro</p>
+              <span>+351 913 533 497</span>
             </div>
           </div>
         </div>
@@ -109,7 +100,7 @@ const Contact: React.FC = () => {
         transition={{ duration: 1 }}
       >
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1639.4890919944296!2d-9.241971135626237!3d38.7051717401909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecc78aec221d5%3A0x9ac7faa77cf0bdf9!2sR.%20Rodrigo%20Albuquerque%20e%20Melo%2027%2C%202795-232%20Linda-a-Velha%2C%20Portugal!5e0!3m2!1spt-BR!2sbr!4v1724556668244!5m2!1spt-BR!2sbr"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d555.5220668520561!2d-9.240714909182053!3d38.705630027077085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecc78a92b51ad%3A0xa6404ca4e1ac3858!2sR.%20Rodrigo%20Albuquerque%20e%20Melo%2027B%2C%202795-117%20Linda-a-Velha%2C%20Portugal!5e0!3m2!1spt-BR!2sbr!4v1724623959243!5m2!1spt-BR!2sbr"
           width="100%"
           height="450"
           style={{ border: 0 }}

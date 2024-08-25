@@ -1,4 +1,3 @@
-
 export interface TreatmentItem {
   title: string;
   description: string;
@@ -13,58 +12,7 @@ export interface TreatmentCategory {
 }
 export const treatments: TreatmentCategory[] = [
   {
-    title: "Tratamentos em Sobrancelhas, Lábios e Olhos",
-    image: "https://picsum.photos/300/200?random=1",
-    items: [
-      {
-        title: "NANOBLANDING",
-        description:
-          "Defina as suas sobrancelhas com o Nanoblading, a técnica de desenho de microfios que proporciona um efeito natural e realista. Sobrancelhas perfeitas, fio a fio, para um olhar mais expressivo e definido.",
-      },
-      {
-        title: "RECONSTRUÇÃO DE SOBRANCELHAS",
-        description:
-          "O tratamento revolucionário que estimula o crescimento natural dos pelos nas sobrancelhas. Diga adeus às falhas e olá a sobrancelhas cheias e definidas. Resultados visíveis e duradouros para um olhar impecável.",
-      },
-      {
-        title: "DESIGN DE SOBRANCELHAS MAIS COLORAÇÃO",
-        description:
-          "Transforme o seu olhar com o nosso serviço de design de sobrancelhas mais coloração. Realce a beleza natural das suas sobrancelhas com precisão e cor duradoura.",
-      },
-      {
-        title: "DESIGN DE SOBRANCELHAS",
-        description:
-          "Cuide das suas sobrancelhas com o nosso serviço de design. Perfeição e definição para um olhar irresistível.",
-      },
-      {
-        title: "BROW LAMINATION",
-        description:
-          "Dê às suas sobrancelhas um efeito elegante e definido com o nosso Brow Lamination. Perfeição e estilo para um olhar mais expressivo.",
-      },
-      {
-        title: "EYELINER",
-        description:
-          "Realce o seu olhar com a micropigmentação de eyeliner. Linhas precisas e duradouras para um efeito sofisticado e impecável todos os dias.",
-      },
-      {
-        title: "LIFTING DE PESTANAS",
-        description:
-          "O lifting de pestanas é um tratamento estético que realça e curva os cílios naturais, proporcionando um efeito de alongamento e volume sem a necessidade de extensões ou máscara.",
-      },
-      {
-        title: "MICROPIGMENTAÇÃO LÁBIOS",
-        description:
-          "Realce a beleza natural dos seus lábios com a nossa micropigmentação. Cor e definição duradouras para um sorriso impecável.",
-      },
-      {
-        title: "HIDRALIPS",
-        description:
-          "Realce a beleza natural dos seus lábios com a nossa micropigmentação. Cor e definição duradouras para um sorriso impecável.",
-      },
-    ],
-  },
-  {
-    title: "Express Treatments",
+    title: "Express",
     image: "https://picsum.photos/300/200?random=2",
     items: [
       {
@@ -169,7 +117,7 @@ export const treatments: TreatmentCategory[] = [
     ],
   },
   {
-    title: "Tratamentos de Gabinete",
+    title: "Gabinete",
     image: "https://picsum.photos/300/200?random=3",
     items: [
       {
@@ -210,7 +158,43 @@ export const treatments: TreatmentCategory[] = [
     ],
   },
   {
-    title: "Tratamentos Premium Mãos e Pés",
+    title: "Homens",
+    image: "https://picsum.photos/300/200?random=5",
+    items: [
+      {
+        title: "Tratamentos de antienvelhecimento facial personalizados",
+        description:
+          "Tratamentos focados nas necessidades específicas da pele masculina, combatendo sinais de envelhecimento e promovendo uma aparência rejuvenescida.",
+      },
+      {
+        title: "Limpezas de pele profunda",
+        description:
+          "Limpezas profundas que removem impurezas e ajudam a manter a pele saudável e limpa.",
+      },
+      {
+        title: "Depilação lazer indolor",
+        description:
+          "Depilação a laser com tecnologia avançada, garantindo um processo indolor e eficiente.",
+      },
+      {
+        title: "Manicura",
+        description:
+          "Serviço de manicura dedicado aos homens, promovendo o cuidado e a saúde das mãos.",
+      },
+      {
+        title: "Pedicura",
+        description:
+          "Tratamento completo de pedicura, focado no bem-estar e saúde dos pés masculinos.",
+      },
+      {
+        title: "Massagens e tratamentos corporais",
+        description:
+          "Massagens relaxantes e tratamentos corporais que combatem a fadiga e promovem o bem-estar geral.",
+      },
+    ],
+  },
+  {
+    title: "Premium Mãos e Pés",
     image: "https://picsum.photos/300/200?random=4",
     items: [
       {
@@ -242,6 +226,57 @@ export const treatments: TreatmentCategory[] = [
         title: "Tratamento de rejuvenescimento (mãos e pés)",
         description:
           "Tratamento especializado para rejuvenescimento das mãos e pés, com produtos e tecnologia de ponta.",
+      },
+    ],
+  },
+  {
+    title: "Sobrancelhas e Lábios",
+    image: "https://picsum.photos/300/200?random=1",
+    items: [
+      {
+        title: "NANOBLANDING",
+        description:
+          "Defina as suas sobrancelhas com o Nanoblading, a técnica de desenho de microfios que proporciona um efeito natural e realista. Sobrancelhas perfeitas, fio a fio, para um olhar mais expressivo e definido.",
+      },
+      {
+        title: "RECONSTRUÇÃO DE SOBRANCELHAS",
+        description:
+          "O tratamento revolucionário que estimula o crescimento natural dos pelos nas sobrancelhas. Diga adeus às falhas e olá a sobrancelhas cheias e definidas. Resultados visíveis e duradouros para um olhar impecável.",
+      },
+      {
+        title: "DESIGN DE SOBRANCELHAS MAIS COLORAÇÃO",
+        description:
+          "Transforme o seu olhar com o nosso serviço de design de sobrancelhas mais coloração. Realce a beleza natural das suas sobrancelhas com precisão e cor duradoura.",
+      },
+      {
+        title: "DESIGN DE SOBRANCELHAS",
+        description:
+          "Cuide das suas sobrancelhas com o nosso serviço de design. Perfeição e definição para um olhar irresistível.",
+      },
+      {
+        title: "BROW LAMINATION",
+        description:
+          "Dê às suas sobrancelhas um efeito elegante e definido com o nosso Brow Lamination. Perfeição e estilo para um olhar mais expressivo.",
+      },
+      {
+        title: "EYELINER",
+        description:
+          "Realce o seu olhar com a micropigmentação de eyeliner. Linhas precisas e duradouras para um efeito sofisticado e impecável todos os dias.",
+      },
+      {
+        title: "LIFTING DE PESTANAS",
+        description:
+          "O lifting de pestanas é um tratamento estético que realça e curva os cílios naturais, proporcionando um efeito de alongamento e volume sem a necessidade de extensões ou máscara.",
+      },
+      {
+        title: "MICROPIGMENTAÇÃO LÁBIOS",
+        description:
+          "Realce a beleza natural dos seus lábios com a nossa micropigmentação. Cor e definição duradouras para um sorriso impecável.",
+      },
+      {
+        title: "HIDRALIPS",
+        description:
+          "Realce a beleza natural dos seus lábios com a nossa micropigmentação. Cor e definição duradouras para um sorriso impecável.",
       },
     ],
   },

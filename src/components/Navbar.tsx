@@ -9,41 +9,41 @@ const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false); // State for menu open/closed
   const [activeSection, setActiveSection] = useState<string>("home"); // Current active section
 
-useEffect(() => {
-   setActiveSection("home");
+  useEffect(() => {
+    setActiveSection("home");
 
-  const handleScroll = () => {
-    const sections = ["home", "about", "treatments", "location"];
-    const scrollPos = window.scrollY 
+    const handleScroll = () => {
+      const sections = ["home", "about", "treatments", "location"];
+      const scrollPos = window.scrollY;
 
-    sections.forEach((section) => {
-      const element = document.getElementById(section);
-      if (element) {
-        const offsetTop = element.offsetTop;
-        const offsetBottom = offsetTop + element.offsetHeight;
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetBottom = offsetTop + element.offsetHeight;
 
-        if (scrollPos >= offsetTop && scrollPos < offsetBottom) {
-          setActiveSection(section);
+          if (scrollPos >= offsetTop && scrollPos < offsetBottom) {
+            setActiveSection(section);
+          }
         }
+      });
+
+      const homeSection = document.getElementById("home");
+      if (homeSection) {
+        const homeHeight = homeSection.offsetHeight;
+        setIsTransparent(window.scrollY < homeHeight);
       }
-    });
+    };
 
-    const homeSection = document.getElementById("home");
-    if (homeSection) {
-      const homeHeight = homeSection.offsetHeight;
-      setIsTransparent(window.scrollY < homeHeight);
-    }
-  };
+    window.addEventListener("scroll", handleScroll);
 
-  window.addEventListener("scroll", handleScroll);
+    // Certifique-se de que a página role para o topo (seção 'Início') ao carregar
+    window.scrollTo(0, 0);
 
-  // Certifique-se de que a página role para o topo (seção 'Início') ao carregar
-  window.scrollTo(0, 0);
-
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-  };
-}, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleScrollToSection = (id: string) => {
     const section = document.getElementById(id);
@@ -74,9 +74,9 @@ useEffect(() => {
         <ul className="hidden lg:flex space-x-8 lg:space-x-12">
           {[
             { id: "home", label: "Início" },
-            { id: "about", label: "Sobre" },
+            { id: "about", label: "Sobre nós" },
             { id: "treatments", label: "Tratamentos" },
-            { id: "location", label: "Contato" },
+            { id: "location", label: "Contacto" },
           ].map((section) => (
             <motion.li
               key={section.id}
@@ -125,9 +125,9 @@ useEffect(() => {
           <ul className="flex flex-col space-y-4 p-6">
             {[
               { id: "home", label: "Início" },
-              { id: "about", label: "Sobre" },
+              { id: "about", label: "Sobre nós" },
               { id: "treatments", label: "Tratamentos" },
-              { id: "location", label: "Contato" },
+              { id: "location", label: "Contacto" },
             ].map((section) => (
               <li key={section.id}>
                 <a
