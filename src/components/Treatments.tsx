@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules"; 
 import "swiper/css";
 import "swiper/css/pagination";
 import { motion } from "framer-motion";
@@ -71,14 +71,18 @@ const Treatments: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        style={{ paddingBottom: "40px" }} // Adiciona espaço para os bullets
+        style={{ paddingBottom: "40px" }} 
       >
         <Swiper
-          modules={[Pagination]} // Instalação do módulo Pagination
-          centeredSlides={true} // Centraliza o slide no modo responsivo
+          modules={[Pagination, Autoplay]}  
+          centeredSlides={true}  
           pagination={{
             clickable: true,
-            el: ".swiper-pagination", // Usando a classe padrão do Swiper
+            el: ".swiper-pagination",  
+          }}
+          autoplay={{
+            delay: 3000, // Tempo de atraso em milissegundos (3 segundos)
+            disableOnInteraction: true, // Pausa o autoplay ao interagir com o slider
           }}
           breakpoints={{
             640: { slidesPerView: 2, spaceBetween: 20, centeredSlides: false },
@@ -96,14 +100,14 @@ const Treatments: React.FC = () => {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src={item.image} 
+                  src={item.image}
                   alt={item.title}
                   className="w-full h-32 object-cover rounded-lg mb-4"
                 />
-                <h3 className="text-md font-semibold mb-2 text-center text-gray-800 truncate w-full">
+                <h3 className="text-md font-semibold mb-2 text-center text-gray-800 w-full">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm text-left overflow-hidden overflow-ellipsis h-20">
+                <p className="text-gray-600 text-sm text-left h-20">
                   {item.description}
                 </p>
               </motion.div>
