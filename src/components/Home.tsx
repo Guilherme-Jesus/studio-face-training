@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import estetica1 from "../assets/estetica-1.jpg";
 import estetica2 from "../assets/estetica-2.jpg";
 import estetica3 from "../assets/estetica-3.jpg";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 
 const images = [estetica1, estetica2, estetica3];
 

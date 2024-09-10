@@ -96,7 +96,7 @@ const Treatments: React.FC = () => {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src={selectedCategory.image}
+                  src={item.image} 
                   alt={item.title}
                   className="w-full h-32 object-cover rounded-lg mb-4"
                 />

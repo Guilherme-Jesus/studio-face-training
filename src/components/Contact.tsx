@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import {
-  FaFacebook,
   FaInstagram,
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaWhatsapp
 } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Contact: React.FC = () => {
   const [displayText, setDisplayText] = useState("");
@@ -55,13 +55,6 @@ const Contact: React.FC = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaFacebook />
-          </a>
-          <a
             href="https://wa.me/351913533497"
             target="_blank"
             rel="noopener noreferrer"
@@ -88,6 +81,14 @@ const Contact: React.FC = () => {
             <div className="space-y-1 text-left">
               <h3 className="font-semibold text-lg">Telefone:</h3>
               <span>+351 913 533 497</span>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-2">
+            <MdEmail className="text-xl mt-1" />
+            <div className="space-y-1 text-left">
+              <h3 className="font-semibold text-lg">Email:</h3>
+              <span>info@facetraining.pt</span>
             </div>
           </div>
         </div>
