@@ -32,7 +32,7 @@ const Home: React.FC = () => {
         />
       ))}
       <div className="relative z-10 text-center">
-        <img src={logo} alt="Logo" className="lg:h-full mx-auto lg:mx-0" />
+        <img src={logo} alt="Logo" className="mx-auto lg:mx-0 lg:scale-150" />
         <p className="mt-4 text-lg lg:text-2xl font-bold">
           Brilhe connosco, em cada momento da sua vida
         </p>
