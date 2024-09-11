@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import {
+  FaFacebook,
   FaInstagram,
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -53,6 +54,13 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
           >
             <FaInstagram />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61563514187593&mibextid=LQQJ4d&rdid=wYIPQPk3IcAvqTHw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F3wScJswuA5kART5t%2F%3Fmibextid%3DLQQJ4d"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook />
           </a>
           <a
             href="https://wa.me/351913533497"
