@@ -81,8 +81,8 @@ const Treatments: React.FC = () => {
             el: ".swiper-pagination",  
           }}
           autoplay={{
-            delay: 3000, // Tempo de atraso em milissegundos (3 segundos)
-            disableOnInteraction: true, // Pausa o autoplay ao interagir com o slider
+            delay: 4000, // Tempo de atraso em milissegundos (3 segundos)
+            disableOnInteraction: false, // Pausa o autoplay ao interagir com o slider
           }}
           breakpoints={{
             640: { slidesPerView: 2, spaceBetween: 20, centeredSlides: false },

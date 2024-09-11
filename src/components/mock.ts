@@ -6,6 +6,7 @@ import revitalizacaoIntensiva from '../assets/ENC_ FOTOS_1/REVITALIZAÇÃO_INTEN
 
 import detoxTotal from '../assets/ENC_ FOTOS_2/DETOX_TOTAL.jpg';
 import fototerapia from '../assets/ENC_ FOTOS_2/FOTOTERAPIA_LED.jpg';
+import fototerapia7 from '../assets/ENC_ FOTOS_7/FOTOTERAPIA.jpg';
 import limpezaProfunda from '../assets/ENC_ FOTOS_2/LIMPEZA_DE_PELE_PROFUNDA.jpg';
 import peelingsQuimicos from '../assets/ENC_ FOTOS_2/PEELINGS_QUIMICOS.jpg';
 import makeUpGlowing from '../assets/ENC_ FOTOS_2/MAKEUP_GLOWING.jpg';
@@ -38,6 +39,8 @@ import eyelier from '../assets/ENC_ FOTOS_5/EYELINER.jpg';
 import liftngPestanas from '../assets/ENC_ FOTOS_4/LIFTING_DE_PESTANAS.jpg';
 import microPigmentacaoLabios from '../assets/ENC_ FOTOS_6/MICROPIGMENTACAO_LABIOS.jpg';
 import hidraLips from '../assets/ENC_ FOTOS_6/HYDRA_LIPS.jpg';
+
+import limpezaDePele from '../assets/ENC_ FOTOS_3/HOMEM_LIMPEZA_DE_PELE.jpg';
 export interface TreatmentItem {
   title: string;
   description: string;
@@ -195,7 +198,7 @@ export const treatments: TreatmentCategory[] = [
         description:
           "Tratamento personalizado consoante as necessidades da pele, combinando fototerapia e massagem manual.",
         duration: "35 min",
-        image: fototerapia,
+        image: fototerapia7,
       },
       {
         title: "Hidratação Corporal",
@@ -227,7 +230,7 @@ export const treatments: TreatmentCategory[] = [
         title: "Limpezas de pele profunda",
         description:
           "Limpezas profundas que removem impurezas e ajudam a manter a pele saudável e limpa.",
-        image: limpezaProfunda,
+        image: limpezaDePele,
       },
       {
         title: "Depilação lazer indolor",
@@ -263,37 +266,37 @@ export const treatments: TreatmentCategory[] = [
         title: "Manicure",
         description:
           "Serviço premium de manicure utilizando os melhores produtos do mercado para um acabamento impecável.",
-          image: manicura,
+        image: manicura,
       },
       {
         title: "Pedicure",
         description:
           "Tratamento completo de pedicure com esfoliação, hidratação e cuidado especializado para os pés.",
-          image: pedicura,
+        image: pedicura,
       },
       {
         title: "Gelinho",
         description:
           "Manicure com aplicação de verniz gelinho, para um acabamento duradouro e brilhante.",
-          image: gelinho,
+        image: gelinho,
       },
       {
         title: "Gel",
         description:
           "Manicure com aplicação de gel, para um acabamento resistente e duradouro.",
-          image: unhasGel,
+        image: unhasGel,
       },
       {
         title: "Acrílico",
         description:
           "Manicure com aplicação de unhas acrílicas, para um acabamento resistente e duradouro.",
-          image: acrilicoUnhas,
+        image: acrilicoUnhas,
       },
       {
         title: "Tratamento de rejuvenescimento (mãos e pés)",
         description:
           "Tratamento especializado para rejuvenescimento das mãos e pés, com produtos e tecnologia de ponta.",
-          image: rejuvenescimentoMaos,
+        image: rejuvenescimentoMaos,
       },
     ],
   },
@@ -305,56 +308,55 @@ export const treatments: TreatmentCategory[] = [
         title: "NANOBLANDING",
         description:
           "Defina as suas sobrancelhas com o Nanoblading, a técnica de desenho de microfios que proporciona um efeito natural e realista. Sobrancelhas perfeitas, fio a fio, para um olhar mais expressivo e definido.",
-          image: nanoblanding,
+        image: nanoblanding,
       },
       {
         title: "RECONSTRUÇÃO DE SOBRANCELHAS",
         description:
           "O tratamento revolucionário que estimula o crescimento natural dos pelos nas sobrancelhas. Diga adeus às falhas e olá a sobrancelhas cheias e definidas. Resultados visíveis e duradouros para um olhar impecável.",
-          image: reconstrucaoSobrancelhas,
+        image: reconstrucaoSobrancelhas,
       },
       {
         title: "DESIGN DE SOBRANCELHAS MAIS COLORAÇÃO",
         description:
           "Transforme o seu olhar com o nosso serviço de design de sobrancelhas mais coloração. Realce a beleza natural das suas sobrancelhas com precisão e cor duradoura.",
-          image: designSombrancelhas,
-
+        image: designSombrancelhas,
       },
       {
         title: "DESIGN DE SOBRANCELHAS",
         description:
           "Cuide das suas sobrancelhas com o nosso serviço de design. Perfeição e definição para um olhar irresistível.",
-          image: designSombrancelhas,
+        image: designSombrancelhas,
       },
       {
         title: "BROW LAMINATION",
         description:
           "Dê às suas sobrancelhas um efeito elegante e definido com o nosso Brow Lamination. Perfeição e estilo para um olhar mais expressivo.",
-          image: brownLamination,
+        image: brownLamination,
       },
       {
         title: "EYELINER",
         description:
           "Realce o seu olhar com a micropigmentação de eyeliner. Linhas precisas e duradouras para um efeito sofisticado e impecável todos os dias.",
-          image: eyelier,
+        image: eyelier,
       },
       {
         title: "LIFTING DE PESTANAS",
         description:
           "O lifting de pestanas é um tratamento estético que realça e curva os cílios naturais, proporcionando um efeito de alongamento e volume sem a necessidade de extensões ou máscara.",
-          image: liftngPestanas,
+        image: liftngPestanas,
       },
       {
         title: "MICROPIGMENTAÇÃO LÁBIOS",
         description:
           "Realce a beleza natural dos seus lábios com a nossa micropigmentação. Cor e definição duradouras para um sorriso impecável.",
-          image: microPigmentacaoLabios,
+        image: microPigmentacaoLabios,
       },
       {
         title: "HIDRALIPS",
         description:
           "Realce a beleza natural dos seus lábios com a nossa micropigmentação. Cor e definição duradouras para um sorriso impecável.",
-          image: hidraLips,
+        image: hidraLips,
       },
     ],
   },

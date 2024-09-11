@@ -33,8 +33,8 @@ const Home: React.FC = () => {
       ))}
       <div className="relative z-10 text-center">
         <img src={logo} alt="Logo" className="mx-auto lg:mx-0 lg:scale-150" />
-        <p className="mt-4 text-lg lg:text-2xl font-bold">
-          Brilhe connosco, em cada momento da sua vida
+        <p className="mt-4 text-lg lg:text-2xl font-bold font-lato">
+          Brilhe connosco, em cada momento da sua vida.
         </p>
       </div>
       <div className="absolute inset-0 bg-black opacity-5 z-1"></div>{" "}

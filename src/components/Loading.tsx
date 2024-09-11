@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 
 const Loading: React.FC<{
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
@@ -8,7 +8,7 @@ const Loading: React.FC<{
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Duração do loading (3 segundos aqui)
+    }, 10000); // Duração do loading (3 segundos aqui)
 
     return () => clearTimeout(timer);
   }, [setLoading]);
@@ -25,7 +25,7 @@ const Loading: React.FC<{
         alt="Logo"
         className="w-96" // Logo maior
         initial={{ opacity: 1 }}
-        animate={{ scale: [1, 1.1, 1], opacity: 1 }}
+        animate={{ scale: [1.2, 1.5, 1], opacity: 1.2 }}
         transition={{ duration: 1.5, repeat: 2, repeatType: "mirror" }}
       />
     </motion.div>
