@@ -39,7 +39,7 @@ import eyelier from '../assets/ENC_ FOTOS_5/EYELINER.jpg';
 import liftngPestanas from '../assets/ENC_ FOTOS_4/LIFTING_DE_PESTANAS.jpg';
 import microPigmentacaoLabios from '../assets/ENC_ FOTOS_6/MICROPIGMENTACAO_LABIOS.jpg';
 import hidraLips from '../assets/ENC_ FOTOS_6/HYDRA_LIPS.jpg';
-
+import designSombranc from '../assets/ENC_ FOTOS_5/DESIGN_SOMBRANC.jpeg';
 import limpezaDePele from '../assets/ENC_ FOTOS_3/HOMEM_LIMPEZA_DE_PELE.jpg';
 export interface TreatmentItem {
   title: string;
@@ -326,7 +326,7 @@ export const treatments: TreatmentCategory[] = [
         title: "DESIGN DE SOBRANCELHAS",
         description:
           "Cuide das suas sobrancelhas com o nosso serviço de design. Perfeição e definição para um olhar irresistível.",
-        image: designSombrancelhas,
+        image: designSombranc,
       },
       {
         title: "BROW LAMINATION",

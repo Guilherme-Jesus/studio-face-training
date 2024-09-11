@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo-navbar.png";
 import "@fontsource/playfair-display"; // Importa a fonte Playfair Display
 
 const Navbar: React.FC = () => {
